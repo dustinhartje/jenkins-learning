@@ -11,4 +11,15 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo 'this will always run'
+        }
+        success {
+            echo 'this was successful'
+        }
+        failure {
+            echo 'this was a complete and utter failure'
+        }
+    }
 }
